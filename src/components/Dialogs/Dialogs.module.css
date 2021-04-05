@@ -1,0 +1,23 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(1250px, 1fr));
+
+    height: 100%;
+}
+
+
+.messages{
+    background-color: white;
+    margin: 10px;
+    width: 70%;
+    min-height: 85%;
+    padding: 20px;
+}
+
+.chats{
+    background-color: white;
+    margin: 10px;
+    width: 28%;
+    min-height: 85%;
+    padding: 20px;
+}

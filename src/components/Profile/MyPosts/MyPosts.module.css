@@ -1,0 +1,24 @@
+.newPostAria {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.newPostAria textarea {
+  border-radius: 10px;
+  border-width: 0ch;
+  margin-left: 10px;
+  outline: none;
+}
+
+.newPostAria button {
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: white;
+  outline: none;
+  border-width: 0ch;
+}
+
+.newPostAria button:hover {
+  background-color: grey;
+}
