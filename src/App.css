@@ -26,5 +26,24 @@
   height: 100%;
 }
 
+@media screen and (max-device-width:480px){
+.myBody{
+  padding: 10px;
+  width: auto;
+  display: grid;
+  height: 87vh;
+  
+  grid-template-areas: 
+  "nav header"
+  "content content"
+  ;
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 60px 10fr;
+  
+  
+}
+}
+
 
 
