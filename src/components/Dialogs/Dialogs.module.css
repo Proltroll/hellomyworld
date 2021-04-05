@@ -1,7 +1,6 @@
 .dialogs {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(1250px, 1fr));
-
+    display: flex;
+    justify-content: center;
     height: 100%;
 }
 

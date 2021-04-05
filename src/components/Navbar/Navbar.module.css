@@ -2,7 +2,6 @@
     grid-area: nav;
     background-color: rgb(110, 180, 241);
     padding: 10px;
-    height: 100%;
   }
 
 .item {
@@ -10,11 +9,11 @@
 }
 
 .item a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: large;
   }
 
 .item a.active {
-  color:rgb(143, 141, 141);
+  color:whitesmoke;
 }

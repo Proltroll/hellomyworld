@@ -4,9 +4,9 @@ import cl from './ChatItem.module.css';
 const ChatItem = (props) => {
     return (
         <div>
-            <NavLink to="/Dialogs" className={cl.chatItem}>
-                {props.chatName}
-            </NavLink>
+            <NavLink to={`/Dialogs/${props.userID}`} className={cl.chatItem}>
+                {props.userName}
+            </NavLink> 
         </div>
     );
 }

@@ -1,9 +1,9 @@
 
 .myBody {
 
-  padding: 20px;
+  padding: 10px;
   width: auto;
-  height: 94vh;
+  height: 95vh;
   display: grid;
   
 
@@ -19,7 +19,7 @@
   font-family: 'Noto Sans';
 }
 
-.myBody-content {
+.myBody_content {
   grid-area: content;
   background-color:whitesmoke;
   width: 100%;

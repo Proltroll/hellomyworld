@@ -15,7 +15,7 @@ const App = () => {
           <Header />
           <Navbar />
 
-          <div className="myBody-content">
+          <div className="myBody_content">
             
             <Route path="/profile" component={Profile} />
             <Route path="/dialogs" component={Dialogs} />

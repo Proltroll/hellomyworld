@@ -4,7 +4,7 @@ const Message = (props) => {
     return (
         <div>
             <div className={cl.messageWindow}>
-                Message
+                {props.messageContent}
             </div>
         </div>
     );
