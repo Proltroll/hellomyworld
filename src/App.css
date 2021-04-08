@@ -1,9 +1,12 @@
+.body {
+  height: 100%;
+}
 
 .myBody {
 
   padding: 10px;
   width: auto;
-  height: 95vh;
+  height: 100%;
   display: grid;
   
 
