@@ -1,7 +1,7 @@
 .dialogs {
     display: flex;
     justify-content: center;
-    height: 100%;
+    height: auto;
 }
 
 
@@ -9,14 +9,18 @@
     background-color: white;
     margin: 10px;
     width: 70%;
-    min-height: 85%;
     padding: 20px;
+    height: 100%;
+    min-height: 300px;
+    max-height: 705px;
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .chats{
     background-color: white;
     margin: 10px;
     width: 28%;
-    min-height: 85%;
     padding: 20px;
 }

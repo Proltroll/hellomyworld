@@ -7,13 +7,13 @@ import cl from './Navbar.module.css'
 
 
 const Navbar = () => {
-   
+   /*
     function press(e) {
         alert(e);
     };
-  
+   */
   return (
-    <nav className={cl.nav} onClick={press}>
+    <nav className={cl.nav}>
       <div className={cl.empty}>
     </div>
       <div className={cl.itemList}>

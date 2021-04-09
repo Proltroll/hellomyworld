@@ -8,7 +8,7 @@ import { Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import News from './components/News/News';
 
-const App = () => {
+const App = (props) => {
   return (
     <BrowserRouter>
         <div className="myBody">
@@ -17,9 +17,9 @@ const App = () => {
 
           <div className="myBody_content">
             
-            <Route path="/profile" component={Profile} />
-            <Route path="/dialogs" component={Dialogs} />
-            <Route path="/news" component={News} />
+            <Route path="/profile" render={() => <Profile state={props.state.profilePage}/> }/>
+            <Route path="/dialogs" render={() => <Dialogs state={props.state.dialogPage}/>}/>
+            <Route path="/news" render={() => <News />} />
           </div>
 
         </div>
