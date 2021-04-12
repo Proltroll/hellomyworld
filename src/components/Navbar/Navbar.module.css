@@ -26,18 +26,34 @@
   
 }   
 
-
-
 @media screen and (max-device-width:480px) {
+  .nav{
+    grid-area: nav;
+    background-color: var(--mainBGColor);
+    background-image: url(https://img2.freepng.ru/20180512/kwe/kisspng-computer-icons-menu-thumbnail-5af6cc84957f15.6226143715261236526123.jpg);
+    background-size: 100% 90%;
+    padding: 10px;
+  }
  
   .navMobile {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 84vh;
-    width: 89vw;
+    height: 88vh;
+    width: 94vw;
     z-index: 200;
-    opacity: 0.5;
+    background-color: var(--mainBGColor);
   }
   
+  .itemListHidden{
+    display:none;
+  }
+  
+  .itemList{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: var(--mainBGColor);
+}
 }

@@ -3,6 +3,7 @@
   display: flex;
   justify-content: flex-start;
   margin: 10px;
+  width: 97%;
 }
 
 .item img {
@@ -15,8 +16,7 @@
 .postText {
   background-color: white;
   border-radius: 10px;
-  height: auto;
-  width: 40%;
+  width: 100%;
   padding: 10px;
   display: flex;
 }

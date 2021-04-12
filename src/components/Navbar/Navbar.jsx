@@ -7,16 +7,25 @@ import cl from './Navbar.module.css'
 
 
 const Navbar = () => {
-   /*
-    function press(e) {
-        alert(e);
-    };
-   */
+
+  function press() {
+    let navBar = document.querySelector("#navBar");
+    let itemList = document.querySelector(`#navItemList`);
+    if (navBar.classList.contains(`${cl.nav}`)) {
+      navBar.className = `${cl.navMobile}`;
+      itemList.className = `${cl.itemList}`;
+    }else if (navBar.classList.contains(`${cl.navMobile}`)){
+      navBar.className = `${cl.nav}`;
+      itemList.className = `${cl.itemListHidden}`;
+    }
+    
+  };
+
   return (
-    <nav className={cl.nav}>
+    <nav id="navBar" onClick={press} className={cl.nav}>
       <div className={cl.empty}>
     </div>
-      <div className={cl.itemList}>
+      <div id="navItemList"className={cl.itemListHidden}>
       <div className={cl.item}>
         <NavLink to="/profile" activeClassName={cl.active}>
           Profile
