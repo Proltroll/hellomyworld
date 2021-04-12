@@ -1,15 +1,22 @@
+import React from 'react'
 import cl from './MyPosts.module.css'
 import Post from './Post/Post'
 
 const MyPosts = (props) => {
 
   let postsElement = props.posts.map(p => <Post ava={p.ava} content={p.content} likeCount={p.likeCount} />)
-
+  let newPostElement = React.createRef();
+  
+  let addPost = () =>
+  {
+    let text = newPostElement.current.value;  
+    alert (text)
+  }
   return (
     <div>
       <div className={cl.newPostAria}>
-        <textarea cols="50" rows="4"></textarea>
-        <button>
+        <textarea ref={newPostElement} cols="100" rows="4"></textarea>
+        <button onClick={addPost}>
           New post!
           </button>
       </div>
