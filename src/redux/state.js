@@ -1,3 +1,4 @@
+import { rerenderEntireTree } from "../render";
 
 function User(id, userName) {
   this.id = id;
@@ -45,6 +46,16 @@ let state = {
         new User(5, 'Vovchik')
       ]
   }
+}
+
+export let addPost = (postMessage) => {
+  let newPost = {
+    ava: "https://likevideogid.ru/wp-content/uploads/2019/11/likee_avatarka.jpg",
+    content: postMessage,
+    likeCount: 0
+  }
+  state.profilePage.posts.push(newPost);
+  rerenderEntireTree(state, addPost);
 }
 
 export default state;
